@@ -1,24 +1,3 @@
-# README
+# Boardgame Winner
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This small Rails app is a work in progess boardgames tracker. It should be able to track each win in a specific boardgames for my significant other and me. Once its development finishes, it should be deployed on the web.
