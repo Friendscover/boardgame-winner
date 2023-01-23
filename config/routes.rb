@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root "games#index"
 
   resources :games
+
+  resources :boardgames
   # Defines the root path route ("/")
   # root "articles#index"
 end
