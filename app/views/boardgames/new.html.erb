@@ -1,0 +1,18 @@
+<h1>New Game</h1>
+<p>Add a new game winner in this form to be able to select it in on the winner page!</p>
+
+<%= form_with model: @boardgame do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :ranked %><br>
+    <%= form.select :ranked, ["True", "False"] %><br>
+  </div>
+
+  <div>
+    <%= form.submit "Add a win!" %>
+  </div>
+<% end %>
