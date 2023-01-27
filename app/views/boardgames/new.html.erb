@@ -1,18 +1,23 @@
-<h1>New Game</h1>
-<p>Add a new game winner in this form to be able to select it in on the winner page!</p>
+<ul>
+  <li><%= link_to "Back to the main page", root_path %>
+  <li><%= link_to "Add a new win", new_game_path %>
+</ul>
+
+<h1>New Boardgame</h1>
+<p>Add a new boardgame in this form to be able to select it in on the winner page!</p>
 
 <%= form_with model: @boardgame do |form| %>
   <div>
-    <%= form.label :title %><br>
+    <%= form.label :title, "Enter the game name!" %><br>
     <%= form.text_field :title %>
   </div>
 
   <div>
-    <%= form.label :ranked %><br>
+    <%= form.label :ranked, "Should this game count as a ranked game?" %><br>
     <%= form.select :ranked, ["True", "False"] %><br>
   </div>
 
   <div>
-    <%= form.submit "Add a win!" %>
+    <%= form.submit "Add a boargame to the list!" %>
   </div>
 <% end %>

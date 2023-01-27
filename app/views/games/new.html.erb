@@ -1,17 +1,12 @@
 <ul>
   <li><%= link_to "Back to the main page", root_path %>
-  <li><%= link_to "Create a new game", new_boardgame_path %>
+  <li><%= link_to "Add a new game", new_boardgame_path %>
 </ul>
 
-<h1>New Game</h1>
-<p>Add a new game winner in this form to be able to select it in on the winner page!</p>
+<h1>New Win</h1>
+<p>Add your win to the list by entering the required data!</p>
 
 <%= form_with model: @game do |form| %>
-  <div>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </div>
-
   <div>
     <%= form.label :winner %><br>
     <%= form.select :winner, ["Tobias", "Teresa"] %><br>
