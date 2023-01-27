@@ -8,6 +8,10 @@
 
 <%= form_with model: @game do |form| %>
   <div>
+    <%= form.collection_select :boardgame_id, Boardgame.order(:title), :id, :title %>
+  </div>
+
+  <div>
     <%= form.label :winner %><br>
     <%= form.select :winner, ["Tobias", "Teresa"] %><br>
   </div>

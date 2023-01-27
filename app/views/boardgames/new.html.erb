@@ -13,11 +13,14 @@
   </div>
 
   <div>
-    <%= form.label :ranked, "Should this game count as a ranked game?" %><br>
-    <%= form.select :ranked, ["True", "False"] %><br>
+    <p> Should this game count as a ranked game?</p>
+    <%= form.label :ranked, "True" %>
+    <%= form.radio_button :ranked, "True" %><br>
+    <%= form.label :ranked, "False" %>
+    <%= form.radio_button :ranked, "False" %><br>
   </div>
 
   <div>
-    <%= form.submit "Add a boargame to the list!" %>
+    <%= form.submit "Add a boardgame to the list!" %>
   </div>
 <% end %>
