@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    height: 50px;
+    width: 300px;
+    background-color: rgb(102, 161, 117);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+}

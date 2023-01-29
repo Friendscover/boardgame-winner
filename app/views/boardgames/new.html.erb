@@ -1,26 +1,34 @@
-<ul>
-  <li><%= link_to "Back to the main page", root_path %>
-  <li><%= link_to "Add a new win", new_game_path %>
-</ul>
+<div class="container" style="flex-direction: row;justify-content: space-around;">
+  <div class="button">
+    <%= link_to "Back to the main page", root_path %>
+  </div>
+  <div class="button">
+    <%= link_to "Add a new win", new_game_path %>
+  </div>
+</div>
 
 <h1>New Boardgame</h1>
-<p>Add a new boardgame in this form to be able to select it in on the winner page!</p>
 
-<%= form_with model: @boardgame do |form| %>
-  <div>
-    <%= form.label :title, "Enter the game name!" %><br>
-    <%= form.text_field :title %>
-  </div>
+<div class="container">
+  <p>Add a new boardgame in this form to be able to select it in on the winner page!</p>
 
-  <div>
+  <%= form_with model: @boardgame do |form| %>
+    <div class="form">
+      <%= form.label :title, "Enter the game name!" %><br>
+      <%= form.text_field :title %>
+    </div>
+
     <p> Should this game count as a ranked game?</p>
-    <%= form.label :ranked, "True" %>
-    <%= form.radio_button :ranked, "True" %><br>
-    <%= form.label :ranked, "False" %>
-    <%= form.radio_button :ranked, "False" %><br>
-  </div>
 
-  <div>
-    <%= form.submit "Add a boardgame to the list!" %>
-  </div>
-<% end %>
+    <div class="form">
+      <%= form.label :ranked, "True" %>
+      <%= form.radio_button :ranked, "True" %><br>
+      <%= form.label :ranked, "False" %>
+      <%= form.radio_button :ranked, "False" %><br>
+    </div>
+
+    <div class="form">
+      <%= form.submit "Add a boardgame to the list!" %>
+    </div>
+  <% end %>
+</div>

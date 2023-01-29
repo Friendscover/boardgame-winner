@@ -1,18 +1,22 @@
-<ul>
-  <li><%= link_to "Record a win", new_game_path %>
-  <li><%= link_to "Add a new game", new_boardgame_path %>
-</ul>
+<div class="container" style="flex-direction: row;justify-content: space-around;">
+  <div class="button">
+      <%= link_to "Record a win", new_game_path %>
+  </div>
+  <div class="button">
+    <%= link_to "Add a new game", new_boardgame_path %>
+  </div>
+</div>
 
 <h1>Last 10 Games</h1>
 
-<ul>
-  <% @games.each do |game| %>
-    <li>
-      Game: <%= game.boardgame.title %> </br>
-      Gewinner: <%= game.winner %> </br>
-      <%= game.created_at %>
-    </li>
-  <% end %>
-</ul>
+<div class="container">
+    <% @games.each do |game| %>
+    <div class="game">
+        Game: <%= game.boardgame.title %></br>
+        Gewinner: <%= game.winner %></br>
+        Zeit: <%= game.created_at %></br>
+    </div>
+    <% end %>
+</div>
 
 
