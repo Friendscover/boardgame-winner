@@ -1,5 +1,5 @@
 databases:
-  - name: bardgame-winner
+  - name: boardgame-winner
     databaseName: boardgame-winner
     user: toby
 
