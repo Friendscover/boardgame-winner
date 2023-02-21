@@ -10,7 +10,7 @@ class BoardgamesController < ApplicationController
     @boardgame = Boardgame.new(boardgame_params)
 
     if @boardgame.save
-      redirect_to root_path
+      redirect_to new_game_path
     else
       render :new, status: :unprocessable_entity
     end
