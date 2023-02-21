@@ -1,6 +1,9 @@
 class GamesController < ApplicationController
   def index
-    @games = Game.order(created_at: :desc).limit(10)
+    @games = Game.order(created_at: :desc).limit(5)
+
+    @games_toby = Game.where("winner = ?", "Tobias")
+    @games_teresa = Game.where("winner = ?", "Teresa")
   end
 
   def new

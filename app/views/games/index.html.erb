@@ -7,8 +7,7 @@
   </div>
 </div>
 
-<h1>Last 10 Games</h1>
-
+<h1>Last 5 Games</h1>
 <div class="container">
     <% @games.each do |game| %>
     <div class="game">
@@ -19,4 +18,24 @@
     <% end %>
 </div>
 
+<h1>Games won by Toby </h1>
+<p>Toby won <%= @games_toby.size %> games! </p>
+  <div class="container">
+    <% @games_toby.each do |game| %>
+    <div class="game">
+        Game: <%= game.boardgame.title %></br>
+        Zeit: <%= game.created_at %></br>
+    </div>
+    <% end %>
+</div>
 
+<h1>Games won by Teresa</h1>
+<p>Teresa won <%= @games_teresa.size %> games! </p>
+  <div class="container">
+    <% @games_teresa.each do |game| %>
+    <div class="game">
+        Game: <%= game.boardgame.title %></br>
+        Zeit: <%= game.created_at %></br>
+    </div>
+    <% end %>
+</div>
