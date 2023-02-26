@@ -7,6 +7,12 @@ class BoardgamesController < ApplicationController
     @boardgame = Boardgame.new
   end
 
+  def show
+    @boardgame = Boardgame.find(params[:id])
+
+    @games = Game.where("boardgame_id = ?", params[:id])
+  end
+
   def create
     @boardgame = Boardgame.new(boardgame_params)
 

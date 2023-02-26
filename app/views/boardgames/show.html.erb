@@ -1,0 +1,24 @@
+<div class="container" style="flex-direction: row;justify-content: space-around;">
+  <div class="button">
+      <%= link_to "Record a win", new_game_path %>
+  </div>
+  <div class="button">
+    <%= link_to "Show all games", boardgames_path %>
+  </div>
+  <div class="button">
+    <%= link_to "Add a new game", new_boardgame_path %>
+  </div>
+</div>
+
+<h1><%= @boardgame.title %></h1>
+<div class="container">
+    <div class="game">
+        Title: <%= @boardgame.title %></br>
+        Is it ranked: <%= @boardgame.ranked %></br>
+    </div>
+
+    <div class="game">
+       Tobias won <%= @games.filter {|g| g.winner == "Tobias" }.count %> games!</br>
+       Teresa won <%= @games.filter {|g| g.winner == "Teresa" }.count %> games!</br>
+    </div>
+</div>
