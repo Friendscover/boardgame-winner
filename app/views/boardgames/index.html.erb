@@ -1,15 +1,3 @@
-<div class="container" style="flex-direction: row;justify-content: space-around;">
-  <div class="button">
-      <%= link_to "Record a win", new_game_path %>
-  </div>
-  <div class="button">
-    <%= link_to "Back to the main page", root_path %>
-  </div>
-  <div class="button">
-    <%= link_to "Add a new game", new_boardgame_path %>
-  </div>
-</div>
-
 <h1>Below you can see all current games, that were added!</h1>
 <div class="container">
     <% @boardgames.each do |boardgame| %>
