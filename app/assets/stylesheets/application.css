@@ -20,7 +20,7 @@
 }
 
 .button {
-    height: 50px;
+    height: 45px;
     width: 300px;
     background-color: rgb(102, 161, 117);
     display: flex;
@@ -28,6 +28,10 @@
     justify-content: center;
     border-radius: 12px;
     margin: 2px;
+}
+
+.button a:visited {
+    color: black;
 }
 
 .form {
@@ -50,4 +54,3 @@ h1, p {
     background-color: red;
     display: table;
   }
-  
