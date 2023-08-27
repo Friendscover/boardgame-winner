@@ -30,3 +30,14 @@
     </div>
     <% end %>
 </div>
+
+<h1>Games that have been a draw!</h1>
+<p>There have been <%= @games_draw.size %> draws! </p>
+  <div class="container">
+    <% @games_draw.each do |game| %>
+    <div class="game">
+        Game: <%= game.boardgame.title %></br>
+        Zeit: <%= game.created_at %></br>
+    </div>
+    <% end %>
+</div>

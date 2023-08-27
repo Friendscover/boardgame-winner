@@ -8,5 +8,6 @@
     <div class="game">
        Tobias won <%= @games.filter {|g| g.winner == "Tobias" }.count %> games!</br>
        Teresa won <%= @games.filter {|g| g.winner == "Teresa" }.count %> games!</br>
+       There have been <%= @games.filter {|g| g.winner == "Draw" }.count %> draws!</br>
     </div>
 </div>

@@ -4,6 +4,7 @@ class GamesController < ApplicationController
 
     @games_toby = Game.where("winner = ?", "Tobias")
     @games_teresa = Game.where("winner = ?", "Teresa")
+    @games_draw = Game.where("winner = ?", "Draw")
   end
 
   def new
