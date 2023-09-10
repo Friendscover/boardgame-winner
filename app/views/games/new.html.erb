@@ -19,7 +19,7 @@
     </div>
 
     <div class="form">
-      <%= form.submit "Add a win!" %>
+      <%= form.submit "Add a win!", data: { turbo_confirm: "Is the data correct?" } %>
     </div>
   <% end %>
 
