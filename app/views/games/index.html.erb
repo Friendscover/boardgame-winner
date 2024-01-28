@@ -1,43 +1,48 @@
-<h1>Last 5 Games</h1>
-<div class="container">
-    <% @games.each do |game| %>
-    <div class="game">
-        Game: <%= game.boardgame.title %></br>
-        Gewinner: <%= game.winner %></br>
-        Zeit: <%= game.created_at %></br>
+<div class=flex-container>
+    <div class="grid-container">
+        <h1>Most recent games</h1>
+        <% @games.each do |game| %>
+        <div class="game">
+            Game: <%= game.boardgame.title %></br>
+            Gewinner: <%= game.winner %></br>
+            Zeit: <%= game.created_at %></br>
+        </div>
+        <% end %>
     </div>
-    <% end %>
 </div>
-
-<h1>Games won by Tobias </h1>
-<p>Toby won <%= @games_toby.size %> games! </p>
-  <div class="container">
-    <% @games_toby.each do |game| %>
-    <div class="game">
-        Game: <%= game.boardgame.title %></br>
-        Zeit: <%= game.created_at %></br>
+<div class=flex-container>
+    <h1>Games won by Tobias </h1>
+    <p>Toby won <%= @games_toby.size %> games! </p>
+    <div class="grid-container">
+        <% @games_toby.each do |game| %>
+        <div class="game">
+            Game: <%= game.boardgame.title %></br>
+            Zeit: <%= game.created_at %></br>
+        </div>
+        <% end %>
     </div>
-    <% end %>
 </div>
-
-<h1>Games won by Teresa</h1>
-<p>Teresa won <%= @games_teresa.size %> games! </p>
-  <div class="container">
-    <% @games_teresa.each do |game| %>
-    <div class="game">
-        Game: <%= game.boardgame.title %></br>
-        Zeit: <%= game.created_at %></br>
+<div class=flex-container>
+    <h1>Games won by Teresa</h1>
+    <p>Teresa won <%= @games_teresa.size %> games! </p>
+    <div class="grid-container">
+        <% @games_teresa.each do |game| %>
+        <div class="game">
+            Game: <%= game.boardgame.title %></br>
+            Zeit: <%= game.created_at %></br>
+        </div>
+        <% end %>
     </div>
-    <% end %>
 </div>
-
-<h1>Games that have been a draw!</h1>
-<p>There have been <%= @games_draw.size %> draws! </p>
-  <div class="container">
-    <% @games_draw.each do |game| %>
-    <div class="game">
-        Game: <%= game.boardgame.title %></br>
-        Zeit: <%= game.created_at %></br>
+<div class=flex-container>  
+    <h1>Games that have been a draw!</h1>
+    <p>There have been <%= @games_draw.size %> draws! </p>
+    <div class="grid-container">
+        <% @games_draw.each do |game| %>
+        <div class="game">
+            Game: <%= game.boardgame.title %></br>
+            Zeit: <%= game.created_at %></br>
+        </div>
+        <% end %>
     </div>
-    <% end %>
 </div>
