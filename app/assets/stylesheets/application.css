@@ -24,6 +24,7 @@
     grid-template-rows: auto;
     grid-template-columns: minmax(100px, 250px) minmax(100px, 250px) minmax(100px, 250px);
     grid-auto-rows: auto;
+    gap: 10px;
 }
 
 .button {
@@ -50,7 +51,8 @@
 }
 
 .game {
-    margin: 10px;
+    padding: 1em;
+    word-wrap: break-word;
 }
 
 h1, p {
@@ -59,8 +61,48 @@ h1, p {
     grid-column-end: 4;
 }
 
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .field_with_errors {
     padding: 2px;
     background-color: red;
     display: table;
   }
+
+/* 
+here the code for the magic click box happens
+*/
+
+.linked-box {
+    max-width: 30em;
+    padding: 1em;
+    position: relative;   
+}
+
+.linked-box a:focus,
+.linked-box a:hover {
+	color: inherit;
+	background: #D4EBBE;
+}
+
+.linked-box a::before,
+.linked-box a::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.linked-box a::before,
+.game {
+    border: thin solid;
+    border-radius: 10px;
+	background: inherit;
+	z-index: -1;
+}
