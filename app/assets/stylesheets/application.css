@@ -30,7 +30,7 @@
 .button {
     height: 45px;
     width: 300px;
-    background-color: rgb(102, 161, 117);
+    background-color: #BF7F19;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,6 +53,9 @@
 .game {
     padding: 1em;
     word-wrap: break-word;
+    border: thin solid;
+    border-radius: 10px;
+    background-color: #FFDB6E;
 }
 
 h1, p {
@@ -86,7 +89,7 @@ here the code for the magic click box happens
 .linked-box a:focus,
 .linked-box a:hover {
 	color: inherit;
-	background: #D4EBBE;
+	background: #FFEDAB;
 }
 
 .linked-box a::before,
@@ -99,8 +102,7 @@ here the code for the magic click box happens
 	left: 0;
 }
 
-.linked-box a::before,
-.game {
+.linked-box a::before {
     border: thin solid;
     border-radius: 10px;
 	background: inherit;
