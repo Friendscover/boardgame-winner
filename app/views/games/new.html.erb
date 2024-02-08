@@ -15,7 +15,12 @@
 
     <div class="form">
 
-      <%= form.select :winner, ["Tobias", "Teresa", "Draw"] %>
+      <%= form.radio_button :winner, "Tobias", checked: true %>
+      <%= form.label :winner_tobias, "Tobias" %>
+      <%= form.radio_button :winner, "Teresa" %>
+      <%= form.label :winner_teresa, "Teresa" %>
+      <%= form.radio_button :winner, "Draw" %>
+      <%= form.label :winner_draw, "Draw " %>
     </div>
 
     <div class="form">
