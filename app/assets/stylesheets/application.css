@@ -19,7 +19,7 @@
     flex-direction: column;
 }
 
-.grid-container {
+.grid-container, form {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: minmax(100px, 250px) minmax(100px, 250px) minmax(100px, 250px);
@@ -43,11 +43,9 @@
     color: black;
 }
 
-.form {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+form {
+    grid-column-start: 1;
+    grid-column-end: 4
 }
 
 .game {
