@@ -74,6 +74,13 @@ nav {
 select {
     grid-area: 1 / span 3;
     text-align: center;
+}
+
+input[type="submit"] {
+    grid-column: 1 / 4;
+}
+
+select, input[type="submit"] {
     background-color: #BF7F19;
     border: 1px solid black;
     border-radius: 10px;

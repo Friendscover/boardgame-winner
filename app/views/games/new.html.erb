@@ -23,9 +23,7 @@
       <%= form.label :winner_draw, "Draw " %>
     </div>
 
-    <div class="">
-      <%= form.submit "Add a win!", data: { turbo_confirm: "Is the data correct?" } %>
-    </div>
+    <%= form.submit "Add a win!", data: { turbo_confirm: "Is the data correct?" } %>
     <% end %>
 
     <%= render "shared/error", object: @game %>
