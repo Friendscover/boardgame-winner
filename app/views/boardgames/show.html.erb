@@ -1,13 +1,21 @@
-<h1><%= @boardgame.title %></h1>
-<div class="container">
-    <div class="game">
-        Title: <%= @boardgame.title %></br>
-        Is it ranked: <%= @boardgame.ranked %></br>
-    </div>
+<div class="flex-container">
+    <div class="grid-container">
+        <h1><%= @boardgame.title %></h1>
+        <div class="game">
+            Is it ranked: <%= @boardgame.ranked %>
+        </div>
 
-    <div class="game">
-       Tobias won <%= @games.filter {|g| g.winner == "Tobias" }.count %> games!</br>
-       Teresa won <%= @games.filter {|g| g.winner == "Teresa" }.count %> games!</br>
-       There have been <%= @games.filter {|g| g.winner == "Draw" }.count %> draws!</br>
+        <div class="game">
+            Tobias won <%= @games.filter {|g| g.winner == "Tobias" }.count %> games!
+        </div>
+        <div class="game">
+            Teresa won <%= @games.filter {|g| g.winner == "Teresa" }.count %> games!</br>
+        </div>
+        <div class="game">
+            There have been <%= @games.filter {|g| g.winner == "Draw" }.count %> draws!</br>
+        </div>
+        <div class="linked-box">
+            <%= link_to ">> Back to all games.", boardgames_path %>
+        </div>
     </div>
 </div>

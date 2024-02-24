@@ -30,7 +30,7 @@
 .button {
     height: 45px;
     width: 300px;
-    background-color: #BF7F19;
+    background-color: #8289AA;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +81,7 @@ input[type="submit"] {
 }
 
 select, input[type="submit"], label[for="boardgame_title"] {
-    background-color: #BF7F19;
+    background-color: #8289AA;
     border: 1px solid black;
     border-radius: 10px;
     color: white;
