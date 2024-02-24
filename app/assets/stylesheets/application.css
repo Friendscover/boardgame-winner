@@ -80,13 +80,27 @@ input[type="submit"] {
     grid-column: 1 / 4;
 }
 
-select, input[type="submit"] {
+select, input[type="submit"], label[for="boardgame_title"] {
     background-color: #BF7F19;
     border: 1px solid black;
     border-radius: 10px;
     color: white;
     min-height: 50px;
     font-size: inherit;
+}
+
+#boardgame_title {
+    grid-column: 2 / 4;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-height: 50px;
+    text-align: center;
+    font-size: inherit;
+}
+
+label[for="boardgame_title"] {
+    text-align: center;
+    padding: 10px;
 }
 
 a, a:visited {
