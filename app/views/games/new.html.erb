@@ -6,9 +6,7 @@
 
     <%= form_with model: @game do |form| %>
 
-    <div>
-      <%= form.collection_select :boardgame_id, Boardgame.order(:title), :id, :title %>
-    </div>
+    <%= form.collection_select :boardgame_id, Boardgame.order(:title), :id, :title %>
 
     <p class="game"> Select the Winner! </p>
     
