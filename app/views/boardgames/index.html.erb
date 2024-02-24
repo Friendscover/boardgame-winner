@@ -1,10 +1,11 @@
-<h1>Below you can see all current games, that were added!</h1>
-<div class="container">
-    <% @boardgames.each do |boardgame| %>
-    <div class="game">
-        <%= link_to "#{boardgame.title}", boardgame %></br>
-        Is it ranked: <%= boardgame.ranked %></br>
-    </div>
-    <% end %>
-</div>
+<div class="flex-container">
+    <div class="grid-container">
+        <h1>Below you can see all current games, that were added!</h1>
 
+        <% @boardgames.each do |boardgame| %>
+        <div class="game">
+            <%= link_to "#{boardgame.title}", boardgame %>
+        </div>
+        <% end %>
+    </div>
+</div>

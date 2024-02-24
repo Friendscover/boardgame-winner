@@ -1,22 +1,22 @@
 <nav class="flex-container" style="flex-direction: row;justify-content: center;">
   <div class="button">
     <%= link_to root_path, class: "black-button" do %>
-      <%= render inline: Rails.root.join("app/assets/images/database.svg").read %>
+      <%= render inline: Rails.root.join("app/assets/images/home.svg").read %>
     <% end %>
   </div>
   <div class="button">
     <%= link_to new_game_path, class: "black-button" do %>
-      <%= render inline: Rails.root.join("app/assets/images/user-plus.svg").read %>
+      <%= render inline: Rails.root.join("app/assets/images/plus-square.svg").read %>
     <% end %>
   </div>
   <div class="button">
     <%= link_to new_boardgame_path, class: "black-button" do %>
-        <%= render inline: Rails.root.join("app/assets/images/plus-square.svg").read %>
+        <%= render inline: Rails.root.join("app/assets/images/dribbble.svg").read %>
     <% end %> 
   </div>
   <div class="button">
     <%= link_to boardgames_path, class: "black-button" do %>
-        <%= render inline: Rails.root.join("app/assets/images/dribbble.svg").read %>
+        <%= render inline: Rails.root.join("app/assets/images/database.svg").read %>
     <% end %> 
   </div>
 </nav>
